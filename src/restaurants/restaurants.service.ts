@@ -9,6 +9,7 @@ export class RestaurantServiece {
     @InjectRepository(Restaurant)
     private readonly restaurants: Repository<Restaurant>,
   ) {}
+
   getAll(): Promise<Restaurant[]> {
     return this.restaurants.find();
   }
