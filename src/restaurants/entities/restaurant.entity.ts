@@ -26,14 +26,4 @@ export class Restaurant {
   @Column()
   @IsString()
   address: string;
-
-  @Field((type) => String)
-  @Column()
-  @IsString()
-  ownersName: string;
-
-  @Field((type) => String)
-  @Column()
-  @IsString()
-  categoryName: string;
 }
